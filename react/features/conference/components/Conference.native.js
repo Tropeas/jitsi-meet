@@ -18,6 +18,7 @@ import { ConferenceNotification } from '../../calendar-sync';
 import { Filmstrip } from '../../filmstrip';
 import { LargeVideo } from '../../large-video';
 import { NotificationsContainer } from '../../notifications';
+import { TranscriptionSubtitles } from '../../subtitles';
 import { setToolboxVisible, Toolbox } from '../../toolbox';
 
 import styles from './styles';
@@ -247,6 +248,11 @@ class Conference extends Component<Props> {
                   * The LargeVideo is the lowermost stacking layer.
                   */}
                 <LargeVideo onPress = { this._onClick } />
+
+                {/*
+                  * The transcription subtitles.
+                  */}
+                <TranscriptionSubtitles onPress = { this._onClick } />
 
                 {/*
                   * If there is a ringing call, show the callee's info.
