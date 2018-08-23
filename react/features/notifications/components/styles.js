@@ -50,6 +50,7 @@ export default createStyleSheet({
     notificationContainer: {
         ...StyleSheet.absoluteFillObject,
         justifyContent: 'flex-end',
+        marginBottom: BoxModel.margin,
         padding: 2 * BoxModel.padding
     },
 
